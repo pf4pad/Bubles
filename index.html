@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
+
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
   <title>Bubbles</title>
 </head>
 
 <body>
-  <div class="hero">
+  <div class="first hero">
     <div class="navbar">
       <img src="img/logo.png" alt="" class="logo">
       <button class="btn" type="button">Sing up</button>
@@ -26,7 +28,7 @@
     </div>
     <div class="side-bar">
       <img src="img/menu.png" class="menu" alt="">
-      <div class="social-links">
+      <div class="first social-links">
         <!-- /.social-links -->
         <a href="#"><img src="img/fb.png" alt=""></a>
         <!-- /.social-links -->
@@ -35,7 +37,7 @@
         <a href="#"><img src="img/tw.png" alt=""></a>
         <!-- /.social-links -->
       </div>
-      <div class="social-user">
+      <div class="first social-user">
         <!-- /.social-links -->
         <a href="#"><img src="img/info.png" alt=""></a>
         <!-- /.social-links -->
@@ -51,9 +53,16 @@
       <img src="img/bubble.png" alt="">
       <img src="img/bubble.png" alt="">
       <img src="img/bubble.png" alt="">
+      <img src="img/bubble.png" alt="">
     </div>
   </div>
+  <script src="sweetalert2.all.min.js"></script>
 
+  <script>
+    document.querySelector(".first").addEventListener('click', function () {
+      Swal.fire("Это демо-сайт");
+    });
+  </script>
 </body>
 
 </html>
